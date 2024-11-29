@@ -1,0 +1,29 @@
+Final deliverable  
+
+----Sections----
+1. Import libraries: Loads necessary libraries.
+2. Data loading: Loads Excel file.
+3. Data preprocessing: Handles missing values.
+4. Data visualization: Scatter plot of Quantity vs. UnitPrice.
+5. Customer segmentation: KMeans clustering.
+6. Predictive analysis: Linear Regression, Decision Tree, Random Forest.
+7. Main app: Streamlit interface.
+
+----Key Functions----
+1. load_data: Loads Excel file.
+2. preprocess_data: Handles missing values.
+3. visualize_data: Scatter plot.
+4. customer_segmentation: KMeans clustering.
+5. predictive_analysis: Regression models
+
+----Predictive Models----
+Linear Regression: Quantity vs. UnitPrice.
+Decision Tree: Quantity vs. UnitPrice.
+Random Forest: Quantity vs. UnitPrice.
+
+----Evaluation Metrics
+Mean Squared Error (MSE): Measures prediction accuracy.
+
+----Streamlit App----
+Sidebar: Upload dataset, select model, adjust segments.
+Main panel: Data visualization, customer segmentation, predictive analysis.

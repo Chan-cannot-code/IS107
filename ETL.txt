@@ -1,0 +1,29 @@
+----Extract (Loading Data)----
+1. Import libraries: pandas, numpy, scipy, os, streamlit
+2. Define dataset path: dataset_folder, dataset_file, dataset_path
+3. load_dataset function: Loads Excel file (Online Retail.xlsx) from specified path.
+    a. Handles FileNotFoundError and other exceptions.
+    b. Returns loaded data or empty DataFrame/error message.
+
+----Transform (Data Cleaning and Transformation)-----
+1. clean_transform_data function: Cleans and transforms loaded data.
+    a. Handle missing values:
+        i.Numeric columns: filled with mean values.
+        ii. Non-numeric columns: filled with 'Unknown'.
+    b. Detect outliers: z-score method (3-standard deviation threshold).
+    c. Remove outliers: data points with z-scores > 3.
+    d. Data type conversions: 'InvoiceDate' column to datetime format.
+    e. Remove duplicates: drop duplicate rows.
+
+-----Load (Data Visualization)----
+1. Streamlit application: main function.
+    a. Load dataset: calls load_dataset function.
+    b. Clean and transform data: calls clean_transform_data function.
+    c. Display data: shows cleaned data in Streamlit app.
+    d. Error handling: displays error message if dataset file not found/empty.
+
+-----Key Takeaways:-----
+1. Modular design: separate functions for data loading, cleaning, and visualization.
+2. Robust error handling: catches exceptions, provides informative error messages.
+3. Data quality checks: missing values, outliers, duplicates.
+4. Streamlit integration: interactive data visualization.
