@@ -1,0 +1,6 @@
+streamlit run web.py
+streamlit run C:\Users\KUPALKABABOSS\Desktop\IS107\web.py
+cd Desktop\IS107
+
+
+
